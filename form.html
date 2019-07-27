@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>Form</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+function submitfunction()
+{
+var a=document.forms["myform"]["fname"].value
+var b=document.forms["myform"]["lname"].value
+var c=document.forms["myform"]["add"].value
+var d=document.forms["myform"]["email"].value
+if(a==null||a==""||b==null||b==""||c==null||c==""||d==null||d=="")
+{
+alert("Access Denied");
+}
+else
+{
+if(a=="Tauseef"||a=="Sahil"||a=="Taha"||a=="Pranita")
+{
+if(b=="Ansari"||b=="Shaikh"||b=="Sonawadekar")
+{
+if(c=="Bandra")
+{
+if(d=="brainware@gmail.com")
+{
+alert("Access Granted");
+}
+else
+{
+alert("Access Denied");
+}
+}
+else
+{
+alert("Access Denied");
+}
+}
+}
+}
+}
+</script>
+</head>
+<body>
+<div id="container">
+<a href="Home.html"><img src="logo.jpg" height="150px" width="250px" align="left"></a>
+<h1><center><i><font color="white">BrainWare Inc.</h1><i></font></center><h2><center><i><font color="white">ESTD in 2010 </h2><i></font></center><br>
+</div><center>
+<div id="navigation">
+<ul id="navmenu">
+<li><b><a href="home.html">Home</a></b></th>
+<li><b><a href="Products.html">Products</a></b></li>
+<li><b><a href="Location.html">Location</a></b></li>
+<li><b><a href="About.html">About Us</a></b></li>
+<li><b><a href="Contact.html">Contact Us</a></b></li>
+</ul></center>
+</div><br><br><br><br>
+<form name="myform" onsubmit="submitfunction()" action="Home.html" method="get">
+<center>
+<h1><i><font color="white">Sign Up Form</font></i></h1>
+<h3><i><font color="red">* Marked Fields are Mandatory</font></h3></i>
+<table width="450px">
+</tr>
+<tr>
+<td>
+<label>First Name:<font color="red">*</font></label>
+</td>
+<td>
+<input type="text" name="fname" maxlength="50" size="30" >
+</td>
+</tr>
+<tr>
+<td>
+<label>Last Name:<font color="red">*</font></label>
+</td>
+<td>
+<input type="text" maxlength="50" name="lname" size="30">
+</td>
+</tr>
+<tr>
+<td>
+<label>Address:<font color="red">*</font></label>
+</td>
+<td>
+<textarea maxlength="10000" cols="25"rows="3" name="add" size="30"></textarea>
+</td>
+</tr>
+<tr>
+<td>
+<label>Phone No.:</label>
+</td>
+<td>
+<input type="text" maxlength="50" size="30">
+</td>
+</tr>
+<tr>
+<td>
+<label>E-mail Address:<font color="red">*</font></label>
+</td>
+<td>
+<input type="text" maxlength="50" name="email" size="30">
+</td>
+</tr>
+</table><br><br>
+<a href="home.html"><input type="submit" name="submit" value="Submit"></a>
+</center><br><br><br><br><br><br><br><br>
+<center>
+<div id="footer"><br>
+<h3><font color="white">Copyright &copy All Rights Reserverd: BrainWare.Inc</font></h3>
+</center></div>
+</body>
+</html>

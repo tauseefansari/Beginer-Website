@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>Login</title>
+<link rel="stylesheet" type="text/css" href="css.css">
+<script>
+function submitfunction()
+{
+var x=document.forms["f1"]["username"].value
+var y=document.forms["f1"]["password"].value
+if(x==null||x==""||y==null||y=="")
+{
+alert("Fill Both Fields");
+}
+else{
+if(x=="brainware")
+{
+if(y=="brainware@123")
+{
+alert("Access Granted");
+}
+else{
+alert("Access Denied");
+}
+}
+else{
+alert("Access Denied");
+}
+}
+}
+</script>
+</head>
+<body>
+<div id="container">
+<a href="Home.html"><img src="logo.jpg" height="150px" width="250px" align="left"></a>
+<h1><center><i><font color="white">BrainWare Inc.</h1><i></font></center><h2><center><i><font color="white">ESTD in 2010 </h2><i></font></center><br>
+</div><center>
+<div id="navigation">
+<ul id="navmenu">
+<li><b><a href="home.html">Home</a></b></th>
+<li><b><a href="Products.html">Products</a></b></li>
+<li><b><a href="Location.html">Location</a></b></li>
+<li><b><a href="About.html">About Us</a></b></li>
+<li><b><a href="Contact.html">Contact Us</a></b></li>
+</ul></center>
+</div><center><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="login_form"><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <form name="f1" id="f1" onsubmit="submitfunction()" action="Home.html" method="get">
+        <table>
+            <tr>
+                <td class="f1_label">User Name :</td><td><input type="text" name="username" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td class="f1_label">Password  :</td><td><input type="password" name="password" value=""  />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="login" value="Log In" style="font-size:18px; " />
+					</td><td><a href="Form.html"<label>Sign Up</a></td>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</div>
+<div id="footer"><br>
+<h3><font color="white">Copyright &copy All Rights Reserverd: BrainWare.Inc</font></h3>
+</div>
+</center>
+</body>
+</html>
